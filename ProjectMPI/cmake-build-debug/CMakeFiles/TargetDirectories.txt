@@ -1,0 +1,3 @@
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectMPI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectMPI/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectMPI/cmake-build-debug/CMakeFiles/ProjectMPI.dir
