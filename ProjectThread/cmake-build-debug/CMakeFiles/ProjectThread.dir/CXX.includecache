@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectThread/lodepng.cpp
+lodepng.h
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectThread/lodepng.h
+limits.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectThread/lodepng.h
+string.h
+-
+vector
+-
+string
+-
+lodepng.h
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectThread/lodepng.h
+iostream
+-
+lodepng.h
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectThread/lodepng.h
+
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectThread/main.cpp
+lodepng.h
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectThread/lodepng.h
+iostream
+-
+thread
+-
+
