@@ -1,6 +1,9 @@
 #include "lodepng.h"
 #include <iostream>
 #include <thread>
+#include <chrono>
+#include <time.h>
+using namespace std::chrono;
 
 struct raw_image {
     std::vector<unsigned char> img;
@@ -145,7 +148,7 @@ image applyFilter(raw_image inputImage) {
 int main(int argc, char *argv[]){
     if (argc < 2) {
         filename = "../photos/sky.png";
-        nrOfThreads = "4";
+        nrOfThreads = "8";
     }
     else {
         filename = argv[1];
@@ -155,6 +158,9 @@ int main(int argc, char *argv[]){
     raw_image img;
     image img2;
     img = decodeOneStep(filename);
+    time_point <high_resolution_clock> start = high_resolution_clock::now();
     img2 = applyFilter(img);
+    time_point <high_resolution_clock> stop = high_resolution_clock::now();
+    std::cout << duration_cast<milliseconds>(stop - start).count() << "ms\n";
     encodeOneStep("../photos/output.png", image_to_raw(img2));
 }

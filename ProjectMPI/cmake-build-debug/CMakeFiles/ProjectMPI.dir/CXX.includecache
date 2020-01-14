@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectMPI/lodepng.h
+string.h
+-
+vector
+-
+string
+-
+lodepng.h
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectMPI/lodepng.h
+iostream
+-
+lodepng.h
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectMPI/lodepng.h
+
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectMPI/main.cpp
+lodepng.h
+/Users/teofanamoisi/Desktop/FinalProjectPPD/ProjectMPI/lodepng.h
+iostream
+-
+thread
+-
+string
+-
+mpi.h
+-
+chrono
+-
+time.h
+-
+

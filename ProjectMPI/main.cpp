@@ -3,6 +3,9 @@
 #include <thread>
 #include <string>
 #include <mpi.h>
+#include <chrono>
+#include <time.h>
+using namespace std::chrono;
 
 struct raw_image {
     std::vector<unsigned char> img;
@@ -267,8 +270,11 @@ int main(int argc, char *argv[]){
         raw_image inputImage;
         image processedImage;
         inputImage = decodeOneStep(fileName);
+        time_point <high_resolution_clock> start = high_resolution_clock::now();
         processedImage = master(inputImage);
         encodeOneStep("./photos/output.png", image_to_raw(processedImage));
+        time_point <high_resolution_clock> stop = high_resolution_clock::now();
+        std::cout << duration_cast<milliseconds>(stop - start).count() << "ms\n";
     } else {
         slave();
     }
